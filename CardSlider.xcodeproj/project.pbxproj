@@ -13,9 +13,11 @@
 		5CBA3993289AAEB4007BCF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBA3991289AAEB4007BCF92 /* Main.storyboard */; };
 		5CBA3995289AAEB4007BCF92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CBA3994289AAEB4007BCF92 /* Assets.xcassets */; };
 		5CBA3998289AAEB4007BCF92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBA3996289AAEB4007BCF92 /* LaunchScreen.storyboard */; };
+		ABFB490533F33A6A6A05A0F8 /* Pods_CardSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADC53E9EC6AF0E4761F5094 /* Pods_CardSlider.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		089261AC129B4841ABDD4DD4 /* Pods-CardSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardSlider.release.xcconfig"; path = "Target Support Files/Pods-CardSlider/Pods-CardSlider.release.xcconfig"; sourceTree = "<group>"; };
 		5CBA3988289AAEB4007BCF92 /* CardSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBA398B289AAEB4007BCF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CBA398D289AAEB4007BCF92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		5CBA3994289AAEB4007BCF92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CBA3997289AAEB4007BCF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CBA3999289AAEB4007BCF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ADC53E9EC6AF0E4761F5094 /* Pods_CardSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E400F56310021D1E46BA9561 /* Pods-CardSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardSlider.debug.xcconfig"; path = "Target Support Files/Pods-CardSlider/Pods-CardSlider.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABFB490533F33A6A6A05A0F8 /* Pods_CardSlider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F7255C6E4101135262AF485 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E400F56310021D1E46BA9561 /* Pods-CardSlider.debug.xcconfig */,
+				089261AC129B4841ABDD4DD4 /* Pods-CardSlider.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5CBA397F289AAEB4007BCF92 = {
 			isa = PBXGroup;
 			children = (
 				5CBA398A289AAEB4007BCF92 /* CardSlider */,
 				5CBA3989289AAEB4007BCF92 /* Products */,
+				1F7255C6E4101135262AF485 /* Pods */,
+				91CA0B4980896649410C6EC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = CardSlider;
 			sourceTree = "<group>";
 		};
+		91CA0B4980896649410C6EC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6ADC53E9EC6AF0E4761F5094 /* Pods_CardSlider.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CBA399C289AAEB4007BCF92 /* Build configuration list for PBXNativeTarget "CardSlider" */;
 			buildPhases = (
+				0C15607724F9EE026373D74F /* [CP] Check Pods Manifest.lock */,
 				5CBA3984289AAEB4007BCF92 /* Sources */,
 				5CBA3985289AAEB4007BCF92 /* Frameworks */,
 				5CBA3986289AAEB4007BCF92 /* Resources */,
+				E14569CFD1E1093182B1C1AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C15607724F9EE026373D74F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CardSlider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E14569CFD1E1093182B1C1AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CardSlider/Pods-CardSlider-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CardSlider/Pods-CardSlider-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CardSlider/Pods-CardSlider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5CBA3984289AAEB4007BCF92 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		5CBA399D289AAEB4007BCF92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E400F56310021D1E46BA9561 /* Pods-CardSlider.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		5CBA399E289AAEB4007BCF92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 089261AC129B4841ABDD4DD4 /* Pods-CardSlider.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
